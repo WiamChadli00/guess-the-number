@@ -10,7 +10,7 @@ int main()
     srand(time(NULL));
     nombremystere = (rand() % (MAX - MIN + 1))+ MIN;
     printf("guess the number!\n \n choose a number between 1 and 100 \n \n try to guess the number in under 10 attempts , yallah byn liya ");
-    while(nombremystere!=ans)
+    do
     {
         scanf("%d",&ans);
         if (ans>nombremystere)
@@ -23,7 +23,7 @@ int main()
         }
         compteur++;
 
-    }
+    }while(nombremystere!=ans);
     if(compteur<10)
     {
         printf("\n \n \n Naaaaaaaaaadi a Canadi");
@@ -31,8 +31,9 @@ int main()
     }
     else
     {
-        printf("Hya hadik , Yallah 3la slamtk ");
+        printf("Hya hadik , Yallah 3la slamtk \n \n");
     }
+    printf(" jbtiha f %d dial d9at",compteur);
 
     return 0;
 }
