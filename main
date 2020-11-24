@@ -31,9 +31,9 @@ int main()
     }
     else
     {
-        printf("Hya hadik , Yallah 3la slamtk \n \n");
+        printf("\n\nHya hadik , Yallah 3la slamtk \n \n");
     }
-    printf(" jbtiha f %d dial d9at",compteur);
+    printf(" \njbtiha f %d dial d9at",compteur);
 
     return 0;
 }
